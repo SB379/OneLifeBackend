@@ -2,7 +2,7 @@ import ExperienceDAO from "../dao/experienceDAO.js";
 
 export default class ExperiencesController {
     static async apiGetExperiences(req, res, next) {
-        const experiencesPerPage = req.query.experiencesPerPage ? parseInt(req.query.experiencesPerPage, 10) : 20
+        const experiencesPerPage = req.query.experiencesPerPage ? parseInt(req.query.experiencesPerPage, 10) : 50
         const page = req.query.page ? parseInt(req.query.page, 10) : 0
 
         let filters = {}
