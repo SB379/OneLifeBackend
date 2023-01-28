@@ -17,7 +17,7 @@ export default class ExperienceDAO {
     static async getExperiences({
         filters = null,
         page = 0,
-        experiencesPerPage = 20,
+        experiencesPerPage = 50,
     } = {}) {
         let query
 
