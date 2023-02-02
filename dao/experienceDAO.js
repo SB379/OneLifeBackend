@@ -26,8 +26,8 @@ export default class ExperienceDAO {
                 query = {$text: {$search: filters["name"]}}
             } else if("Classification" in filters) {
                 query = {"Classification": {$eq: filters["Classification"]}}
-            } else if ("Zip" in filters){
-                query = {"Address.Zip": {$eq: filters["Zip"]}}
+            } else if ("Area" in filters){
+                query = {"Area": {$eq: filters["Area"]}}
             }
         }
 

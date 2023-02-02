@@ -9,8 +9,8 @@ export default class ExperiencesController {
 
         if (req.query.Classification) {
             filters.Classification = req.query.Classification
-          } else if (req.query.Zip) {
-            filters.Zip = req.query.Zip
+          } else if (req.query.Area) {
+            filters.Area = req.query.Area
           } else if (req.query.name) {
             filters.name = req.query.name
           }
